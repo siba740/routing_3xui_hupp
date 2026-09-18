@@ -1,0 +1,27 @@
+{
+  "name": "My Russia Bypass",
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:ru",
+          "domain:ru",
+          "domain:su",
+          "domain:xn--p1ai"
+        ],
+        "ip": [
+          "geoip:private",
+          "geoip:ru"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "network": "tcp,udp"
+      }
+    ]
+  }
+}
