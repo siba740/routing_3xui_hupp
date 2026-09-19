@@ -5,17 +5,6 @@
     "rules": [
       {
         "type": "field",
-        "outboundTag": "block",
-        "domain": [
-		  "geosite:category-ads-all",
-		  "domain:an.yandex.ru",
-		  "domain:yandexadexchange.net",
-		  "domain:ad.mail.ru",
-		  "domain:relap.io"
-  ]
-      },
-      {
-        "type": "field",
         "outboundTag": "direct",
         "domain": [
           "domain:ru",
